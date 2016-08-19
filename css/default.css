@@ -1,0 +1,27 @@
+.float_left,.fl,.fL,#fl {float:left;}
+
+.float_right,.fr,.fR,#fr {float:right}
+
+.c {clear:both; height:0; overflow:hidden}
+
+.cur_pointer{cursor:pointer}
+
+.hidden{display:none}
+
+.noBg,#noBg{background:none}
+
+/* margin */
+
+.mRight15,#mRight15{margin-right:15px}
+
+.mTop10,#mTop10{margin-top: 10px}
+
+.mBottom15,#mBottom15{margin-bottom: 15px}
+
+/* padding */
+
+.padding0,#padding0{padding: 0}
+
+/* font-size */
+.f12,#f12{font-size: 12px}
+.f13,#f13{font-size: 13px}

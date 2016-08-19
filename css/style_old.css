@@ -1,0 +1,170 @@
+@charset "utf-8";
+/* CSS Document */
+
+ul,li{margin:0;padding:0}
+ul li{list-style:none}
+
+/* general config */
+
+.block,.blockGray{padding:15px;background:#f2f2f2;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px}
+.block{background:#fff;border:1px solid #D7D7D7;padding:0}
+.blockGray .title{font:bold 14px "Arial";padding:0 0 10px}
+.blockGray .content{padding:10px 0 0;border-top:1px solid #827C7C}
+.titlePink{font:bold 14px "Arial";color:#BE2462;text-decoration:none;text-transform:uppercase}
+h1.headTitle,.sTitle{font:bold 16px "Arial";color:#000;text-transform:uppercase;padding:0;margin:0}
+.sTitle{font-size:14px}
+
+/* button */
+a.btGray, a.btBlack, a.btPink{color:#fff;cursor:pointer;display:block;font:12px "Arial";width:100px;height:27px;line-height:27px;text-align:center;text-decoration:none;background:#707070;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px}
+a.btBlack{background:#000}
+a.btPink,a.btPink:hover{background:#DA3376;text-decoration:none}
+a.btBlack:hover{background:#383838;text-decoration:none}
+a.btGray:hover{background:#595959;text-decoration:none}
+input.button,input#button{border:0;height:auto;padding:5px 10px;font:bold 14px "Arial";background:#707070;color:#fff;cursor:pointer;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px}
+input.button:hover,input#button:hover{background:#595959}
+
+
+/* category left */
+.categoryLeft ul li{margin:0 0 8px}
+.categoryLeft ul li h2,.categoryLeft ul li h3{font-weight:normal;font-size:13px;margin:0;padding:0}
+.categoryLeft ul li a{background: url("../images/bullet_round.gif") no-repeat 0 5px;color: #535353;display: block;padding: 0 0 0 13px;width:207px}
+.categoryLeft ul li a.active{text-decoration:underline}
+.categoryLeft ul li a.child{font-weight:bold}
+.categoryLeft ul li ul{padding:8px 0 0 20px}
+.categoryLeft ul li ul li a{background-image:url("../images/bullet_round_pink.gif");width:187px}
+
+/* home list */
+.homeList li{float: left;height: 228px;width: 228px;overflow: hidden;padding: 0;margin: 0 8px 8px 0;position: relative;z-index: 1;
+border:1px solid #D7D7D7;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px}
+.homeList li.last_of_line{margin-right:0}
+.homeList li .hover_descr{position:absolute;width:218px;padding:10px;background:url(../images/blur.png);bottom:0;left:0}
+.homeList li .hover_descr a{color: #000;font-weight: bold;text-transform: uppercase}
+.homeList li .product_desc{margin:5px 0 0;color:#BB2626;font:bold 14px "Arial"}
+
+/* category list */
+.categoryList li{height: 228px;width: 708px;overflow: hidden;padding: 0;margin: 0 0 10px 0;
+border:1px solid #D7D7D7;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px}
+.categoryList li a.product_image{float:left}
+.categoryList li .detail{float:right;width:440px;height:208px;overflow:hidden;padding:10px 20px 10px 0}
+.categoryList li .detail_left{float:left;width:300px;overflow:hidden}
+.categoryList li .detail_right{float:right;width:125px;overflow:hidden}
+.categoryList li a.btPink{width:80px}
+.categoryList li a.btGray, .categoryList li a.btBlack{width:120px}
+.categoryList li .price{font-size:18px;color:#000;height:27px;line-height:27px;}
+
+/* breadcum */
+.breadcrumb, .breadcrumb a{color:#464545;font-size:14px}
+.breadcrumb .navigation-pipe {padding: 0 5px 0 6px}
+.breadcrumb .navigation_end{color:#EC2A8A}
+.breadcrumb .navigation_end .navigation-pipe{color:#464545}
+
+/* product detail */
+.productDetail .leftImage{float:left;width:260px;overflow:hidden}
+.productDetail .rightInfo{float:right;width:405px;padding:0;color:#535353}
+.productDetail .rightInfo a.btBlack,.productDetail .rightInfo a.btGray{color:#fff}
+.productDetail .rightInfo .info{margin:15px 0 0}
+.productDetail .rightInfo .info input{border:1px solid #BDC2C9;padding:0 2px;margin:0;height:25px;font-size:14px}
+.productDetail .rightInfo .price{font-size:20px}
+.productDetail .leftImage .smallImage{margin:10px 0 0}
+.productDetail .leftImage .bigImage,.productDetail .leftImage .smallImage .img{
+width:256px;height:256px;border:1px solid #d7d7d7;background:no-repeat center center;cursor:pointer;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px}
+.productDetail .leftImage .smallImage .img{width:80px;height:80px;margin:0 2px;float:left}
+
+/* cart block */
+.cartBlock{margin:15px 0}
+.cartBlock .content{border:0}
+.cartBlock .content ul li{width:220px;overflow:hidden;margin:0 0 10px;font-size:12px}
+.cartBlock .content ul li span{font-size:10px;color:#5C5B52}
+.cartBlock .content ul li a{font-size:12px}
+.cartBlock .liner{border-top:1px dotted;padding:10px 0 0;margin:10px 0 0}
+.cartBlock .block{padding:5px 10px;color:#939292;font-size:12px;border:0px}
+.cartBlock .block .fl{font-size:13px}
+.cart_del{display:block;height:13px;width:11px;overflow:hidden;background:url(../images/delete.gif) no-repeat}
+
+/* cart page */
+.table_block {margin: 20px auto 2em;padding: 0 0 6px}
+table.std {border-collapse: collapse;border-spacing: 0;width: 100%}
+table.std td, table.std th {padding: 0.4em 7px}
+table.std td {background: #FFF;padding:5px 0 0}
+table.std tbody tr {height: 100px}
+table.std tbody tr td, table.std tfoot tr td {border-top: 1px solid #7F7F7F}
+table.std thead th {background: #EEEEEA;color: #000;font: bold 12px "Arial";height: 24px;padding-bottom: 0;padding-top: 0;text-align: left;text-transform: uppercase}
+table.std tfoot tr td {color: #5C5B52;text-align: right;border-top-width:2px;border-bottom:2px solid #7F7F7F;padding:20px 0}
+table.std h5 a {font: bold 13px "Arial";color:#000}
+table.std .price{color: #BE2462;font-size: 13px}
+
+/* cart form finish */
+.cartFinish input,.cartFinish textarea,.cartFinish select{border:1px solid #ccc}
+.cartFinish input{height:20px;padding:3px 5px}
+.cartFinish textarea,.cartFinish select{padding:5px}
+.cartFinish input.error,.cartFinish select.error{border-color:red}
+
+/* register */
+.reg_collapse{color:#2c2c2c}
+.reg_collapse .title{height:20px;line-height:20px;font-weight:bold;color:#ad1713;font-size:14px;padding:10px 17px 0}
+#bm_register_form #cError, #customer_login_form #cError{margin-bottom:0}
+.reg_collapse input,.reg_collapse select {font-size: 14px;padding: 3px 5px;width: 265px;border:1px solid #ccc}
+.reg_collapse select{padding:3px;width:277px;height:26px}
+.reg_collapse a{font-size:11px;font-weight:normal}
+.reg_oke{color:#2c2c2c;font-size:11px}
+.reg_oke a{font-size:11px;text-decoration:underline}
+.listDistrict{position:absolute;width:308px; border:1px solid #ccc;padding:5px;display:none;background-color:#fff;height:120px;overflow: auto}
+.listDistrict a {display:block;width:285px;padding:5px;color:#2c2c2c;font-size:12px; font-weight:normal;line-height:normal}
+.listDistrict a:hover {background-color:#eee}
+.customerRegister{position:relative}
+.customerRegister .listDistrict{right:125px;width:193px;}
+.customerRegister .listDistrict a{width:170px}
+input.checkbox{padding:0;margin:0;height:auto}
+a.orangeButtonRegis{display:block;padding:0 0 0 10px;width:226px;height:46px;background:url(../images/buttonSignUp.png) no-repeat 0 0;text-decoration:none;text-align:left}
+/* end register */
+
+/*profile edit*/
+.lineEdit{border-bottom: 1px solid #e0e0e0;margin-top:10px;padding-bottom: 10px}
+.lineEdit input{display:none;padding:3px 10px}
+.lineEdit input.show{display:block}
+.lineEdit a{color:#ad1713;font-size: 11px;text-decoration: none;line-height: 35px}
+.lineEdit a:hover{text-decoration: underline;}
+.valEdit{font-size: 12px; font-weight: bold; color:#2c2c2c}
+.cEdit{width:480px;margin-left:20px}
+.captionEdit{font-size: 12px;color:#727272}
+
+.boxSuccess{border:1px solid #00ff00; padding:10px 0; text-align:center; font-weight:bold; font-size:14px;color:#006200}
+.boxError{border:1px solid #a90000; padding:10px 0; text-align:center; font-weight:bold; font-size:14px;color:#a90000}
+.w290{width:290px}
+
+.newsPager .f12{color:#ad1713}
+.newsPager a{color:#2c2c2c;font-size:11px}
+.newsPager em{font-size:10px}
+.newsPager .mTop10{background:url(../images/icon_arrow2.png) no-repeat 0 5px;padding:0 0 0 10px;margin-left:3px}
+
+/*Giao dien Danh sach tin dang*/
+.rento_Profile_Title{font-size: 20px;font-weight: bold;line-height: 20px}
+.rento_Profile_Title select{width: 200px;height: 25px;font-size: 15px}
+
+.rento_Profile_liInfo{width: 80%;line-height: 20px}
+.rento_Profile_Detail_Tit,.rento_Profile_Detail_Tit h1{font-size: 18px;line-height: 25px}
+.rento_Profile_Detail_BoxAdr,.rento_Profile_Detail_BoxInfo{border: 1px solid #ccc;background-color: palegoldenrod;padding: 20px}
+.rento_Profile_Detail_BoxInfo{background-color: #FFFFD7}
+.rento_Profile_Detail_GI_Info{width: 70%}
+.rento_Profile_Detail_GI_Infoul li{float: left;width: 50%;font-size: 13px;font-weight: normal;border: none;cursor: pointer}
+
+.formRow {margin: 10px 0}
+.formRow select,.formRow input{ height: 30px}

@@ -1,0 +1,645 @@
+@import url('color.css');
+
+#rd_chat * {
+    z-index: 9999999;
+    font-family: "Roboto";
+    font-size: 13px;
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box!important;
+    box-sizing: content-box !important;
+}
+#rd_chat .rd_hide {
+    display: none;
+}
+#rd_chat {
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    z-index: 9999999999;
+}
+#rd_chat .rd_chat_border {
+    /*border: #ccc solid 1px;*/
+}
+#rd_chat .rd_chat_backgroud {
+    background: #2f3755;
+}
+#rd_chat .rd_chat_dock {
+    position: relative;
+}
+#rd_chat .rd_chat_box {
+      width: 100%;
+}
+#rd_chat .rd_chat_box .rd_chat_box_down {
+    width: 270px;
+    height: 37px;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+}
+#rd_chat .rd_chat_box .rd_chat_box_down .rd_chat_title_box_down {
+    color: #fff;
+    line-height: 36px;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    width: 235px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 5px;
+    text-align: center;
+}
+#rd_chat .rd_chat_box .rd_chat_box_down .rd_chat_title_box_down .rd_title_onl, #rd_chat .rd_chat_box .rd_chat_box_down .rd_chat_title_box_down .rd_title_off {
+    line-height: 40px;
+    font-weight: 500;
+}
+#rd_chat .rd_chat_box .rd_chat_box_down .rd_chat_title_box_down .rd_title_onl:before {
+    margin-right: 8px;
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    content:'';height:10px;width:10px;background:url(../../img/icon.png) no-repeat 0 0;display: inline-block;
+}
+#rd_chat .rd_chat_box .rd_chat_box_down .rd_chat_title_box_down .rd_title_off:before{
+    margin-right: 8px;
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    content:'';height:10px;width:10px;background:url(../../img/icon.png) no-repeat -12px 0;
+}
+#rd_chat .rd_chat_box .rd_chat_box_down.rd_status_onl .rd_chat_title_box_down .rd_title_off{
+    display: none;
+}
+#rd_chat .rd_chat_box .rd_chat_box_down.rd_status_off .rd_chat_title_box_down .rd_title_onl{
+    display: none;
+}
+#rd_chat .rd_chat_box .rd_chat_box_down .rd_chat_icon_up_box {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 8px;
+    background: url('http://chat.zamba.vn/batdongsan/development/v-1.1.1/img/icon-up.png') no-repeat;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up {
+    
+    border-radius: 5px 5px 0 0;
+}
+
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_chat {
+  width: 316px;
+}
+
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_chat .rd_chat_box_broad {
+    height: 294px;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_login{
+    height: 108px;
+    float: right;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_chat .rd_chat_box_broad .rd_chat_chat_head {
+    width: 100%;
+    height: 55px;
+    position: relative;
+    cursor: pointer;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_chat_head .rc_chat_info_support {
+    width: 288px;
+    display: inline-block;
+    color: #fff;
+}
+
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_login_title {
+    width: 100%;
+    height: 72px;  
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_login_input {
+    width: 100%;
+    height: 36px;
+    background: #fff;
+    position: relative;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_login_input input {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    padding: 10px;
+    border: 0;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_offline {
+    border-radius: 5px 5px 0 0;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_offline .rd_chat_box_broad .rd_chat_chat_head {
+    width: 100%;
+    height: 36px;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_offline .rd_chat_box_broad .rd_chat_chat_head .rd_chat_chat_head_title {
+    color: #fff;
+    line-height: 36px;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    width: 278px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 5px;
+    text-align: center;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_offline .rd_chat_box_broad .rd_chat_chat_head .rd_chat_chat_head_icon {
+    display: inline-block;
+    background: url("http://chat.zamba.vn/batdongsan/development/v-1.1.1/img/icon-down.png") no-repeat;
+    width: 16px;
+    height: 8px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_login_icon {
+  width: 60px;
+  display: table-cell;
+  text-align: center;
+}
+#rd_chat .rd_chat_login_avatar {
+  background: url("http://imageprocessor.websimages.com/fit/1920x1920/www.belyuecorporation.com/girl-with-headset.jpg") no-repeat;
+  background-size: 40px 40px;
+  vertical-align: middle;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  margin: 15px auto;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_login .rd_chat_box_broad .rd_chat_chat_head_icon {
+    display: table-cell;
+    padding: 5px 5px 0 0;
+    font-size: 40px;
+    color: #fff;
+    line-height: 13px;
+    cursor: pointer;
+    position: relative;
+    width: 3px;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_chat_head_icon div{
+    font-size: 40px;
+    color: #fff;
+    line-height: 13px;
+    cursor: pointer; 
+    top: 0;
+    left: -10px;
+    position: absolute;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_login_anything {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 0 10px 0;
+    width: 183px;
+    height: 36px;
+    display: table-cell;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_offline {
+    height: 294px;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up.rd_status_onl .rd_chat_box_broad .rd_chat_chat_head .rd_chat_name:before {
+    margin-right: 8px;
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    content:'';height:10px;width:10px;background:url(../../img/icon.png) no-repeat 0 0;display: inline-block;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up.rd_status_off .rd_chat_box_broad .rd_chat_chat_head .rd_chat_name:before {
+    margin-right: 8px;
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    content:'';height:10px;width:10px;background:url(../../img/icon.png) no-repeat -12px 0;display: inline-block;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_chat_head .rd_chat_name {
+    display: block;
+    text-align: center;
+    line-height: 35px;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_chat_head .rd_chat_anything {
+    display: block;
+    text-align: center;
+    line-height: 2px;
+    font-size: 12px;
+    font-weight: 300;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_chat .rd_chat_box_broad .rd_chat_chat_head .rd_chat_chat_head_icon {
+    display: inline-block;
+    background: url("http://chat.zamba.vn/batdongsan/development/v-1.1.1/img/icon-down.png") no-repeat;
+    width: 16px;
+    height: 8px;
+    vertical-align: top;
+    text-align: center;
+    margin-top: 28px;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_chat_chat {
+    width: calc(100% - 2px);
+    height: 177px !important;
+    background: #fff;
+    position: relative;
+    border: #ccc solid 1px;
+    overflow: auto;
+    /*padding: 5px 10px;*/
+ /*   overflow-x: hidden;
+    overflow-y: auto;*/
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_chat_chat * {
+    /*font-family: "Open Sans", sanserif;*/
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_chat_input {
+    width: calc(100% - 2px);
+    height: 62px;
+    background: #fff;
+    border: #ccc solid 1px;
+    border-top: none;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_chat_input .rd_chat_input_send {
+    display: inline-block;
+    width: 294px;
+    height: 41px;
+    margin: 10px;
+    position: relative;
+    vertical-align: middle;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_chat_input .rd_chat_input_send textarea{
+    width: calc(100% - 20px);
+    height: calc(100% - 10px);
+    border: #ddd solid 1px;
+    border-radius: 5px;
+    resize: none;
+    overflow-x: hidden;
+    display: block;
+    padding: 5px 10px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+
+/**
+ * Facebook Style
+ */
+#chat-pagelet-dock *::before,
+#chat-pagelet-dock *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.chat-message-sent,
+.chat-message-received {
+    position: relative;
+    clear: both;
+}
+
+.chat-message-sent::before,
+.chat-message-received::before,
+.chat-message-sent::after,
+.chat-message-received::after {
+  content: '';
+  display: table;
+}
+
+.rd_chat_chat_chat section {
+    padding: 10px 8px;
+}
+
+.chat-center {
+  max-width: 100%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+[class^='chat-grid-'] {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+[class^='chat-grid-'] {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.chat-grid-message >[class^='chat-col-'] {
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+.chat-grid-message >[class^='chat-col-']:nth-child(-n + 1) {
+  margin-top: 0;
+}
+
+.chat-grid-message >[class^='chat-col-']:nth-child(1n) {
+  margin-right: 0;
+}
+
+.chat-col-message-sent {
+  /*margin-left: calc(8.33333333% + 0.08333333em) !important;*/
+  margin-left: calc(8.33333333% + -1.2em) !important;
+  margin-bottom: 10px !important;
+}
+
+.chat-col-message-received {
+  /*margin-right: calc(8.33333333% + 0.08333333em) !important;*/
+  /*margin-right: calc(8.33333333% + -1.2em) !important;*/
+  margin-bottom: 10px !important;
+  margin-left: 15px !important;
+  width: 100%;
+  position: relative;
+}
+
+.chat-col-message-sent {
+  width: calc(91.66666667% - 0.08235677em) !important;
+}
+
+.chat-message-received {
+    max-width: 85%;
+}
+
+.chat-message-sent,
+.chat-message-received {
+  margin-top: 0.0625em !important;
+  margin-bottom: 0.0625em !important;
+  /*padding: 0.25em 1em ;*/
+}
+.chat-message-sent .chat-message-text,
+.chat-message-received .chat-message-text {
+    font-family:  "Roboto" !important;
+    margin: 0 ;
+    line-height: 1.5 !important;
+    padding: 0.30em 1em !important;
+    max-width: 100%;
+    word-wrap: break-word;
+    font-size: 13px !important;
+    font-weight: 100;
+}
+.chat-message-sent .chat-message-text a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.chat-message-received .chat-message-text a {
+    color: #333;
+    text-decoration: underline;
+}
+
+.chat-message-sent .chat-message-text img,
+.chat-message-received .chat-message-text img {
+    max-width: 100%;
+}
+
+.chat-message-sent .chat-message-text {
+    white-space: pre-line;
+    max-width: 200px;
+    font-family: "Roboto" !important;
+    font-weight: 300 !important;
+    color: #e9f0ff !important;
+    font-size: 14px  !important;
+}
+
+.chat-message-received .chat-message-text {
+        /* font-family: Arial; */
+    font-family: "Roboto" !important;
+    font-weight: 300 !important;
+    color: #333 !important;
+    font-size: 13px !important;
+    white-space: pre-line;
+    max-width: 200px;
+}
+
+.chat-message-sent {
+  float: right;
+  color: white;
+  /*background-color: dodgerblue;*/
+  background-color: #007aff;
+  border-radius: 1em;
+  position: relative;
+}
+
+/*.chat-message-sent:first-child {
+  border-radius: 1em 1em 0.25em 1em;
+}*/
+
+/*.chat-message-sent:last-child {
+  border-radius: 1em 0.25em 1em 1em;
+}*/
+
+.chat-message-sent:only-child {
+  border-radius: 1em;
+}
+
+.chat-message-received {
+  float: left;
+  color: black;
+  /*background-color: lightgray;*/
+  background-color: #e9f3fd;
+  border-radius: 1em;
+  /*border-radius: 0.25em 1em 1em 0.25em;*/
+  margin-left: 20px!important;
+}
+
+/*.chat-message-received:first-child {
+  border-radius: 1em 1em 1em 0.25em;
+}
+
+.chat-message-received:last-child {
+  border-radius: 0.25em 1em 1em 1em;
+}*/
+
+.chat-message-sent:last-child .chat-message-icon {
+    background: url("http://chat.zamba.vn/dev-batdongsan/chat/img/1y.png") no-repeat;
+    background-size: auto;
+    position: absolute;
+    bottom: 0px;
+    right: -9px;
+    display: block !important;
+    width: 16px;
+    height: 20px;
+}
+
+.chat-message-received:last-child .chat-message-icon {
+    background: url("../img/2y.png") no-repeat;
+    background-size: auto;
+    position: absolute;
+    bottom: 0px;
+    left: -9px;
+    display: block !important;
+    width: 16px;
+    height: 20px;
+}
+
+.chat-message-received:only-child {
+  border-radius: 1em;
+}
+
+.chat-message-images {
+    max-width: 200px;
+    max-height: 200px;
+    position: relative;
+    width: 100%;
+    border-radius: 0.9em;
+    vertical-align: top;
+}
+
+#rd_chat .chat-support-img {
+    display: inline-block;
+    position: absolute;
+    bottom: -10px;
+    left: -16px;
+}
+
+#rd_chat .chat-support-img img {
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+}
+
+#rd_chat .rd_message_wait {
+  opacity: 0.4;
+}
+
+#rd_chat .rd_chat_input_image {
+    position: absolute;
+    bottom: 14px;
+    right: 16px;
+    display: block;
+    overflow: hidden;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    background: url('../../img/icon.png') no-repeat -34px 0;
+}
+
+#rd_chat .rd_chat_input_image input {
+  opacity: 0;
+}
+
+#rd_chat .chat-message-image img {
+  max-width: 200px;
+  max-height: 200px;
+  padding: 10px;
+}
+
+/*Phan code chinh sua them vao
+*/
+
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_info_offline {
+  width: calc(100% - 20px);
+  background: #fff;
+  padding: 10px;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_info_offline .rd_chat_offline_phone {
+  margin-bottom: 35px;
+  height: 30px;
+  width: 100%;
+  padding-bottom: 35px;
+}
+
+
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_info_offline .rd_chat_offline_message {
+  margin-bottom: 15px;
+   width: 100%;
+  height: 60px;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_offline .rd_chat_box_broad .rd_chat_info_offline .rd_chat_offline_message_viewer
+  {
+  height: 80px;
+  width: 100%;
+  border-radius: 5px8
+  color: #fff;
+  margin: 0px auto 10px auto;
+  overflow: auto;
+  white-space: pre-line;
+}
+
+
+ .rd_chat_offline_message_viewer_span {
+  padding: 5px;
+  display: block;
+  word-wrap: break-word;
+  border-radius: 5px;
+  background: #ddd;
+  border: #eee solid 1px;
+}
+
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_info_offline .rd_chat_offline_phone input {
+  height: 35px;
+  width: calc(100% - 21px);
+  padding: 0 10px; 
+  border-radius: 5px;
+  border: #ccc solid 1px;
+}
+
+
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_info_offline .rd_chat_offline_message textarea {
+  height: calc(100% - 22px) !important;
+  width: calc(100% - 22px) !important;
+  padding: 10px;
+  resize: none;
+  overflow: hidden;
+  border: #ccc solid 1px;
+  border-radius: 5px;
+  white-space: pre-line;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_info_offline .rd_chat_label_offline {
+  text-align: center;
+  font-size: 13px;
+  height: 70px;
+  
+}
+
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_info_offline .rd_chat_offline_submit {
+  height: 30px;
+  width: 100px;
+  margin: 0 auto 39px auto;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_info_offline .rd_chat_offline_submit input {
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#rd_chat .rd_chat_box_login {
+  width: 211px;
+  float: right;
+}
+
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_offline .rd_chat_box_broad .rd_chat_info_offline .rd_chat_offline_edit_infor{
+  text-align: center;
+  margin-bottom: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_info_offline .rd_chat_offline_save {
+  height: 30px;
+  width: 100px;
+  margin: 0 auto 57px auto;
+  padding-top: 70px;
+}
+#rd_chat .rd_chat_box .rd_chat_box_up .rd_chat_box_broad .rd_chat_info_offline .rd_chat_offline_save input {
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+
