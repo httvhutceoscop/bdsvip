@@ -1,0 +1,31 @@
+(function(root, factory) {
+	if(typeof define === "function" && define.amd) {
+		define([], factory);
+	} else if (typeof exports === "object") {
+		module.exports = factory();
+	} else {
+		root.rdChatOption = factory();
+	}
+}(this, function() {
+	var api = {};
+	api.TPL = 'template_2'; //tpl
+	api.COLOR = 'default'; //tpl
+	api.CLASSCOLOR = 'rd_color_default'; //tpl
+	api.ENABLELOGIN = '0'; //autologin
+	api.ENABLEOFFLINE = '1'; //autologin
+	api.TITLE_BOX_DOWN_OFFLINE = 'NHÂN VIÊN HỖ TRỢ ĐANG OFFLINE';
+	api.TITLE_BOX_DOWN_ONLINE = 'NHÂN VIÊN HỖ TRỢ ĐANG ONLINE';
+	api.TITLE_BOX_UP = 'Rento.vn - Hỏi đáp';
+	api.BOX_NAME_SUPPORT = '';
+	api.BOX_ANYTHING = 'Nhân viên hỗ trợ';
+	api.BOX_AVATAR = "http://chat.zamba.vn/tplchat/img/girl-with-headset.jpg";
+	api.PLACEHOLDER_LOGIN = 'Vui lòng nhập họ tên.';
+	api.LOGIN_ANY_THING = 'Nhân viên hỗ trợ đang Online';
+
+
+	api.BOX_TITLE_OFFLINE = 'Hiện tại đã hết giờ làm việc (8h30 - 17h30)<br /> Quý khách vui lòng để lại tin nhắn<br />Rento.vn sẽ liên hệ và trả lời sớm nhất';
+	api.MESS_OFFLINE = 'Hiện tại đã hết phiên hỗ trợ trực tuyến, xin quý khách vui lòng để lại nội dung cần hỗ trợ và thông tin liên hệ, chúng tôi sẽ phản hồi trong thời gian sớm nhất';
+	api.MESS_ONLINE = 'Anh/Chị đang có điều gì chưa rõ về Rento? Em sẵn sàng trả lời tất cả các câu hỏi của anh/chị';
+
+	return api;
+}));	
